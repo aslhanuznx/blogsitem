@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>BLOG SİTEM</title>
+</head>
+<body>
+  <div id="beyazkutu">
+    <div id="logo"><img src="logo.png" alt="Logo"></div>
+    <div id="asli">ASLIHAN UZUN</div>
+    <div class="nav-links">
+      <div class="banneryazi"><a href="site.html">Anasayfa</a></div>
+      <div class="banneryazi"><a href="proje.html">Projeler</a></div>
+      <div class="banneryazi active"><a href="blog.html">Blog</a></div>
+      <div class="banneryazi"><a href="hakkımda.html">Hakkımda</a></div>
+      <div class="banneryazi"><a href="iletisim.html">İletişim</a></div>
+    </div>
+  </div>
+
+  <div class="icerik">
+   <h1>💻 FİKİR VE DÜŞÜNCE REHBERİ</h1>
+
+<p style="max-width:900px; margin:20px auto; text-align:left; line-height:1.8;">
+Bilgisayar programcılığı, modern dünyada neredeyse her sektörün temel taşlarından biridir. 
+Sadece kod yazmak değil, aynı zamanda algoritmik düşünme, problem çözme ve yaratıcı çözümler üretme yeteneğini de kapsar. 
+Web tasarımı ise programlamayı estetikle birleştirerek kullanıcı dostu, fonksiyonel ve görsel olarak etkileyici sayfalar yaratmanı sağlar.<br><br>
+
+<strong>📌 Programlama Dillerine Genel Bakış:</strong><br>
+
+- <strong>Python:</strong> Basit ve anlaşılır sözdizimi sayesinde başlangıç için idealdir. Veri analizi, yapay zeka, otomasyon ve web backend geliştirmede kullanılır. Örnek: 
+<pre style="background:#f5f5f5; padding:10px; border-radius:6px;">
+def selamla(isim):
+    print(f"Merhaba, {isim}! Kodlama öğrenmek eğlencelidir.")
+
+selamla("Aslı")
+
+# Liste işlemleri
+sayilar = [2, 4, 6, 8]
+karesiz = [s**2 for s in sayilar]
+print(karesiz)
+</pre>
+
+- <strong>Java:</strong> Nesne yönelimli programlama (OOP) için güçlü bir dildir. Büyük çaplı uygulamalar, oyun geliştirme ve mobil uygulamalar için uygundur. Örnek:
+<pre style="background:#f5f5f5; padding:10px; border-radius:6px;">
+public class MerhabaDunya {
+    public static void main(String[] args){
+        System.out.println("Merhaba Java! Büyük projeler için hazırsınız.");
+    }
+}
+</pre>
+
+- <strong>JavaScript:</strong> Web sayfalarını interaktif hale getiren dil. Kullanıcı deneyimini geliştirmek, animasyonlar ve frontend uygulamalar yapmak için kullanılır. Örnek:
+<pre style="background:#f5f5f5; padding:10px; border-radius:6px;">
+console.log("Merhaba JavaScript!");
+document.body.style.backgroundColor = "#D0A772";
+</pre>
+
+- <strong>HTML & CSS:</strong> Web sayfalarının iskeletini ve stilini oluşturur. HTML içerik yapısını, CSS ise görselliği kontrol eder. Örnek:
+<pre style="background:#f5f5f5; padding:10px; border-radius:6px;">
+&lt;div style="background:#4A90E2; color:white; padding:20px; border-radius:12px;"&gt;
+    &lt;h3&gt;Merhaba Web!&lt;/h3&gt;
+    &lt;p&gt;HTML ve CSS ile tasarım yapmak çok keyifli.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+<strong>📌 Web Tasarımın Temelleri:</strong><br>
+- Responsive tasarım: Mobil cihazlarda da uyumlu tasarım için Grid ve Flexbox kullanın.<br>
+- Tipografi ve renk: Doğru font ve renk seçimi kullanıcı deneyimini artırır.<br>
+- UI/UX: Kullanıcı dostu ve işlevsel tasarım her zaman önceliğiniz olsun.<br>
+- Grafik tasarım: Figma, Photoshop veya Illustrator ile görsel içerikler oluşturun, bunları webde kullanın.<br><br>
+
+<strong>📌 Programlama İpuçları:</strong><br>
+- Hatalardan korkmayın; debug süreci öğrenmenin en iyi yoludur.<br>
+- Kodlama pratiği yaparak algoritmik düşünme yeteneğinizi geliştirin.<br>
+- Projeler oluşturun ve öğrendiklerinizi uygulayın.<br>
+- Python ile veri analizi, Java ile oyun geliştirme, HTML/CSS/JS ile web projeleri deneyin.<br>
+- Kod ve tasarımı birlikte düşünün; estetik ve işlevsellik birlikte olmalı.<br><br>
+
+<strong>💡 Örnek Proje Fikri:</strong><br>
+- Basit bir blog sayfası oluşturun. Python backend ile veri kaydedin ve kullanıcı yorumlarını gösterin.<br>
+- CSS ile güzel kartlar ve animasyonlar ekleyin.<br>
+- JavaScript ile kullanıcı yorumlarını anında gösterin.<br><br>
+
+<em>Unutmayın: Programcılık ve web tasarım, yaratıcılığınızı teknoloji ile birleştirdiğiniz bir yolculuktur. 
+Her hata bir öğrenme fırsatı, her satır kod bir deneyimdir. Küçük adımlarla başlayın, kendinizi geliştirin ve paylaşın! 🌟</em>
+</p>
+
+
+    <!-- Yorumlar bölümü -->
+    <section id="yorumBolumu" style="max-width:1000px; max-height: 500px; margin:0 auto; text-align:center; margin-top: 50px;">
+      <h2 style="color:#b37b2c;">🗨️ Düşüncelerinizi Paylaşın</h2>
+      <form id="yorumFormu">
+        <input type="text" id="isim" placeholder="Adınız (isteğe bağlı)" style="width:100%; padding:10px; border-radius:8px; border:1px solid #ccc;">
+        <textarea id="yorum" placeholder="Düşüncenizi yazın..." required style="width:100%; margin-top:10px; height:100px; padding:10px; border-radius:8px; border:1px solid #ccc;"></textarea>
+        <div style="text-align:right; margin-top:10px;">
+          <button type="submit" style="background:#D0A772; color:white; padding:10px 16px; border:none; border-radius:8px; cursor:pointer;">Gönder</button>
+        </div>
+      </form>
+
+      <div id="yorumListesi" style="margin-top:25px;"></div>
+    </section>
+  </div>
+
+  <div id="alt">TÜM HAKLARIMIZ SAKLIDIR.</div>
+
+  <script>
+    async function fetchYorumlar(){
+      const res = await fetch('/yorumlar');
+      const data = await res.json();
+      const list = document.getElementById('yorumListesi');
+      list.innerHTML = '';
+      data.forEach(y => {
+        const kart = document.createElement('div');
+        kart.style = "background:white; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); padding:15px; margin-top:15px;";
+        kart.innerHTML = `<strong>${y.isim || "Anonim"}:</strong> <p>${y.yorum}</p>`;
+        list.appendChild(kart);
+      });
+    }
+
+    document.getElementById('yorumFormu').addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      const isim = document.getElementById('isim').value.trim();
+      const yorum = document.getElementById('yorum').value.trim();
+      if(!yorum) return;
+
+      await fetch('/yorumlar', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({isim, yorum})
+      });
+      document.getElementById('isim').value = '';
+      document.getElementById('yorum').value = '';
+      fetchYorumlar();
+    });
+
+    fetchYorumlar();
+  </script>
+</body>
+</html>
