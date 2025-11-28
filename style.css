@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url("Soyut Fotoğraflar.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Calibri, sans-serif;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(6px);
+  z-index: -1;
+}
+
+
+.icerik {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 82%;        
+  max-width: 2300px; 
+  min-height: 600px; 
+  padding: 60px;    
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25); 
+  text-align: center;
+  margin: 5px auto; 
+}
+
+#beyazkutu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-color: rgba(236, 241, 239, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 50px;
+  gap: 15px;
+  z-index: 1000;
+}
+
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 45px;
+    width: 50px;
+}
+
+
+#asli {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 6px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 80px; 
+    margin-left: 200px; 
+	text-align: center;
+}
+
+.banneryazi a {
+    display: inline-block;
+    padding: 5px 10px; 
+    text-align: center;
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #ECF1EF;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.banneryazi a:hover {
+    background-color: #D0A772;
+    color: white;
+}
+
+
+.banneryazi.active a {
+    background-color: #D0A772;
+    color: white;
+    border: 2px solid #b48a57;
+}
+
+.icerik-wrapper {
+    display: flex;
+    align-items: flex-start;      
+    gap: 30px;                    
+}
+
+
+#fotokutu img {
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+
+.icerik-yazi {
+	margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+    text-align: left;
+}
+
+.projeler {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+    justify-content: space-between; 
+    margin-top: 100px; 
+}
+
+.projeler h2 {
+    flex: 0 0 auto; 
+    font-size: 28px;
+    font-weight: bold;
+    color: #202020; 
+    margin-right: 20px;
+}
+
+.proje-kartlari {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+}
+
+.proje-karti {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    overflow: hidden; 
+    width: 290px;
+    height: 320px; 
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: rgb(249, 248, 248); 
+    position: relative;
+    text-decoration: none;
+}
+
+.proje-karti img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 0;
+    filter: brightness(0.7); 
+    transition: transform 0.3s;
+    border-radius: 12px;
+}
+
+.proje-karti:hover img {
+    transform: scale(1.05); 
+}
+
+.proje-karti h3,
+.proje-karti p {
+    position: relative;
+    z-index: 1; 
+    margin: 5px 10px;
+}
+
+.proje-karti h3 {
+    font-size: 18px;
+    color: #b11919; 
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.proje-karti p {
+    font-size: 14px;
+}
+/*Anasayfa bitimi*/
+
+/*proje sayfası başlangıç*/
+.proje-liste {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; /* kutular arası boşluk biraz azaltıldı */
+  justify-items: center;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.proje-kutu {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  position: relative;
+  cursor: pointer;
+  height: auto; /* yükseklik artık resim ve içerik ile uyumlu */
+}
+
+.proje-kutu:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.proje-kutu img {
+  width: 100%;
+  height: auto; /* resim yüksekliği otomatik, kırpılmaz */
+  max-height: 180px; /* istenirse üst sınır */
+  object-fit: contain; /* resmi kırpmadan kutuya sığdır */
+  transition: filter 0.35s ease, transform 0.35s ease;
+  border-bottom: 1px solid #eee;
+}
+
+.proje-kutu:hover img {
+  filter: brightness(75%);
+  transform: scale(1.03);
+}
+
+.proje-bilgi {
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.proje-bilgi h3 {
+  font-size: 18px;
+  color: #b37b2c;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.proje-bilgi p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.proje-kutu:hover .proje-bilgi h3 {
+  color: #e0a343;
+}
+/*proje sayfa bitimi*/
+
+/*Hakkımda bölümü */
+.icerik p {
+  font-size: 16px;
+  line-height: 1.9;     
+  color: #333;
+  text-align: justify;    
+}
+
+.icerik p strong {
+  color: #b37b2c;         
+  font-weight: 600;
+}
+/* İLETİŞİM */
+#iletisim-formu {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 250px;
+}
+
+#iletisim-formu h2 {
+    color: #b37b2c;
+    font-size: 24px;
+    margin-right: 250px;
+    margin-bottom: 20px;
+}
+
+#iletisim-formu form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#iletisim-formu input,
+#iletisim-formu textarea {
+    width: 70%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+#iletisim-formu textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#iletisim-formu button {
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #D0A772;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.3s;
+    align-self: flex-end;
+    margin-right: 270px;
+}
+
+#iletisim-formu button:hover {
+    background-color: #b48a57;
+}
+
+
+#alt {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #070707;
+    color: white;
+    text-align: center;
+    font-family: Calibri;
+    font-weight: bold;
+    line-height: 40px;
+    z-index: 9999;
+}
