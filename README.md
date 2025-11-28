@@ -30,7 +30,8 @@ Genel olarak amaç: **kendine ait bir blog sitesi oluşturmak**, içerikleri kol
 - Python 
 
 ## 📌 Canlı Görüntüle 
-👉 Siteyi Görüntüle (https://aslhanuznx.github.io/blogsitem/)**  
+👉 Siteyi Görüntüle (https://aslhanuznx.github.io/blogsitem/)
+
 
 
 
