@@ -26,9 +26,10 @@ Genel olarak amaç: **kendine ait bir blog sitesi oluşturmak**, içerikleri kol
 ## 🛠 Teknolojiler  
 - HTML5  
 - CSS3  
-- PHP (iletişim formu için)  
-- Python (opsiyonel/back-end için)  
-- Statik site yaklaşımları için ideal.
+- PHP 
+- Python 
+
+
 
 
 
