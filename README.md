@@ -29,6 +29,8 @@ Genel olarak amaç: **kendine ait bir blog sitesi oluşturmak**, içerikleri kol
 - PHP 
 - Python 
 
+## 📌 Canlı Görüntüle 
+👉 Siteyi Görüntüle (https://aslhanuznx.github.io/blogsitem/)**  
 
 
 
