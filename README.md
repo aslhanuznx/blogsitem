@@ -12,6 +12,7 @@ mail.php dosyası sayesinde iletişim formu yoluyla mesaj alınabilir.
 Stil dosyası style.css ile temel görsel düzen sağlanmış.
 Proje görselleri: logo ve afiş gibi çoklu png/jpeg dosyaları yer alıyor.
 Front‑end ağırlıklı ama arka uç için de PHP ya da Python destekleri mevcut.
+
 🧩 Dosya ve Klasör Yapısı
 blog.html – Blog sayfası şablonu.
 hakkımda.html – “Hakkımda” sayfası.
@@ -21,6 +22,7 @@ style.css – Tüm sayfalara uygulanan genel stil dosyası.
 Görseller klasörü ya da doğrudan kök dizinde: logo.png, acenta.png, afiş.png, site.png, vs.
 app.py – Eğer varsa Python ile çalışan bir backend betiği.
 proje.html, site.html – Ek sayfa örnekleri ya da demo sayfaları.
+
 🛠 Teknolojiler
 HTML5
 CSS3
